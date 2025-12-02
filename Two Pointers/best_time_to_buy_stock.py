@@ -1,6 +1,6 @@
 """
-Problem: Remove Duplicates - Input Array is Sorted
-Link: https://leetcode.com/problems/remove-duplicates-from-sorted-array/
+Problem: Best Time to Buy and Sell Stock
+Link: https://leetcode.com/problems/best-time-to-buy-and-sell-stock
 Category: Two pointers
 """
 
