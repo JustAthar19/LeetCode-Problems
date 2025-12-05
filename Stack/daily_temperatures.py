@@ -16,3 +16,16 @@ def dailyTemperatures(temperatures):
         count = 0 if j == n else count
         res.append(count)
     return res
+
+# stack
+def dailyTemperaturesStack(temperatures):
+    res = [0] * len(temperatures)
+    stack = []
+    for i, v in enumerate(temperatures):
+        while stack and v > stack[-1][0]:
+            stackV, stackI = stack.pop()
+            res[stackI] = (i - stackI)
+        stack.append([v, i])
+    return res
+
+print(dailyTemperaturesStack(temperatures))
